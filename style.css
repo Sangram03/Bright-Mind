@@ -1,0 +1,364 @@
+/* ================================================== google link use for font  ===================================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+/* ==================================================  made by sangram das ===================================*/
+/*============================================== main part of web =================*/
+:root{
+    --color-primary:#006DA4;
+    --color-danger:#ec2e3e;
+    --color-success:#41f1b6;
+    --color-warning:#ffbb55;
+    --color-white:#fff;
+    --color-info-dark:#7d8da1;
+    --color-info-light:#dce1eb;
+    --color-dark:#363949;
+    --color-light:rgba(132, 139, 200, 0.18);
+    --color-primary-variant:#111e88;
+    --color-dark-variant:#677483;
+    --color-background:#f6f6f9;
+/* ==================================================  made by sangram das ===================================*/
+
+    --card-border-radius:2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+
+    --card-padding:1.8rem;
+    --padding-1:1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+/*------------------------------------------------ good--------------------------------------------------*/
+/*====================================================== first margin=========================*/
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    appearance: 0;
+    border:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+
+}
+/*================================================== body of the code===========================*/
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background-color: var(--color-background);
+    user-select: none;
+    overflow: hidden;
+    color: var(--color-dark);
+
+}
+/*================================================= container =========================*/
+.container{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem; 
+}
+/*================================================ anchor tag=====================================*/
+a{
+    color: var(--color-dark);
+}
+/* ================================================== image property ===================================*/
+img{
+    display: block;
+    width: 10%;
+    outline: none;
+}
+/* ================================================== b tag ===================================*/
+b{
+    height: 50px;
+    width: 50px;
+
+}
+/* ================================================== em tag ===================================*/
+em{
+
+    color: red;
+}
+/* ================================================== headline 1 ===================================*/
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+
+}
+/* ================================================== headline 2 ===================================*/
+h2{
+    font-size: 1.4rem;
+}
+/* ================================================== headline 3 ===================================*/
+h3{
+    font-size: 0.87rem;
+}
+/* ================================================== headline 4 ===================================*/
+h4{
+    font-size: 0.8rem;
+}
+/* ================================================== headline 5 ===================================*/
+h5{
+    font-size: 0.77rem;
+}
+/* ================================================== profile ===================================*/
+small{
+    font-size: 0.75rem;
+ }
+ /* ================================================== profile photo ===================================*/
+.profile-photo{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/* ================================================== last 24 hour ===================================*/
+.text-muted{
+    color: var(--color-info-dark);
+
+}
+/* ================================================== percentage ===================================*/
+p{
+    color: var(--color-dark-variant);
+}
+/* ================================================== profile part ===================================*/
+b{
+    color: var(--color-dark);
+}
+/* ================================================== root primary color ===================================*/
+.primary{
+    color: var(--color-primary);
+}
+/* ================================================== root danger color ===================================*/
+.danger{
+    color: var(--color-danger);
+}
+/* ================================================== root success color ===================================*/
+.success{
+    color: var(--color-success);
+}
+/* ================================================== root warning color ===================================*/
+.warning{
+    color: var(--color-warning);
+}
+
+
+/* ================================================== side bar ===================================*/
+aside{
+    height: 100vh;
+   
+
+}
+/* ================================================== top of side bar ===================================*/
+aside .top{
+    background:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+/* ================================================== side bar logo ===================================*/
+aside .logo {
+    display: flex;
+    gap: 0.8rem;
+}
+/* ================================================== side bar close ===================================*/
+aside .close{
+    display: none;
+}
+/* ================================================== side bar menu ===================================*/
+aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+}
+/* ================================================== size bar heading 3 ===================================*/
+aside h3{
+    font-weight: 500;
+}
+/* ================================================== side bar anchor tag ===================================*/
+aside .sidebar a{
+    display: flex;
+    color: var(--color-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3rem;
+    transition: all 300ms ease;
+}
+/* ================================================== side bar link tag ===================================*/
+aside .sidebar a span{
+    font-size: 1.6rem;
+    transition: all 300ms ease;
+}
+/* ================================================== side bar last element ===================================*/
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+/* ================================================== sidebar response ===================================*/
+aside .sidebar a.active{
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+/* ================================================== sidebar transition ===================================*/
+aside .sidebar a.active:before{
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary);
+}
+/* ================================================== sidebar span tag ===================================*/
+aside .sidebar a.active span{
+    color: var(--color-primary);
+    margin-left: calc(1rem - 3px);
+}
+/* ================================================== side bar hover effect ===================================*/
+aside .sidebar a:hover{
+    color: var(--color-primary);
+}
+/* ================================================== side bar span tag hover effect ===================================*/
+aside .sidebar a:hover span{
+    margin-left: 1rem;
+}
+/* ================================================== number of project built ===================================*/
+aside .sidebar .projects-count{
+    background: var(--color-danger);
+    color: var(--color-white);
+    padding: 2px 10px;
+    font-size: 11px;
+    border-radius: var(--border-radius-1);
+}
+/* ================================================== dashboard ===================================*/
+main{
+    margin-top: 1.4rem;
+}
+/* ================================================== dashboard date  ===================================*/
+main .date{
+    display: inline-block;
+    background: var(--color-light);
+    border-radius:var(--border-radius-1) ;
+    margin-top: 1rem;
+    padding: 0.5rem 1.6rem;
+}
+/* ================================================== dashboard input date ===================================*/
+main .date input[type="date"]{
+    background: transparent;
+    color: var(--color-dark);
+}
+
+/* ================================================== container ===================================*/
+main .insights{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+
+}
+/* ================================================== container class ===================================*/
+main .insights > div{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+/* ================================================== container class hover effect ===================================*/
+main .insights > div:hover{
+    box-shadow: none;
+
+}
+/* ================================================== container class span tag ===================================*/
+main .insights > div span{
+    background: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+
+}
+/* ================================================== expenses container span tag ===================================*/
+main .insights > div.expenses span{
+    background: var(--color-danger);
+
+}
+/* ================================================== income container span tag ===================================*/
+main .insights > div.income span{
+    background: var(--color-success);
+
+}
+/* ================================================== middle class tag ===================================*/
+main .insights > div .middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+/* ================================================== insights header 3 ===================================*/
+main .insights h3{
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;
+}
+/* ================================================== dashboard insight progress bar ===================================*/
+main .insights .progress{
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+/* ==================================================  svg file ===================================*/
+main .insights svg{
+
+    width: 7rem;
+    height: 7rem;
+}
+/* ================================================== circle svg file ===================================*/
+main .insights svg circle{
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 110;
+    stroke-dashoffset: 92;
+}
+
+/* ================================================== svg file on sales tag ===================================*/
+main .insights .sales svg circle{
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+/* ================================================== svg file on expense tag ===================================*/
+main .insights .expenses svg circle{
+    stroke-dashoffset: 20;
+    stroke-dasharray: 80;
+}
+/* ================================================== svg file on income tag ===================================*/
+main .insights .income svg circle{
+    stroke-dashoffset: 35;
+    stroke-dasharray: 110;
+}
+/* ================================================== circle percentage ===================================*/
+main .insights .progress .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
